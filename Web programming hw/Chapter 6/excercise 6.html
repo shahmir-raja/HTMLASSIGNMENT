@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Creating the html document as usual and and setting the style sheet and javascript file to be executes -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+    <link rel="stylesheet" href="Excercise 6.css">
+</head>
+<!--Creating the structuren of the calculator and putting in the value -->
+<body>
+    <div class="container">
+        <h1>Petrol Calculator</h1>
+        <div class="input-group">
+            <label for="cost">Cost per liter:</label>
+            <input type="number" id="cost" step="0.01" value="1.72">
+        </div>
+
+        <div class="input-group">
+            <label for="liters">Liters purchased:</label>
+            <input type="number" id="liters" step="0.01" value="0">
+        </div>
+<!--Using the javascript to calculate the cost of petrol -->
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="totalCost">Total cost:</p>
+    </div>
+    <script src="Excercise 6.js"></script>
+</body>
+</html>
